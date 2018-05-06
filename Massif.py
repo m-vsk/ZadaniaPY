@@ -6,12 +6,12 @@ m = 4
 d5 = []
 
 #Цикл внешний
-for i in range(0, m):
+for i in range(m):
     # Создание размера = i массива
     d5.append([])
 
     #Цикл внутренний
-    for j in range(0, n):
+    for j in range(n):
         #Устанавливаем значение 5 всем элементам массива
         d5[i].append(5)
 
