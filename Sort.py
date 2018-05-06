@@ -1,5 +1,3 @@
-import numpy
-
 #Массив имен людей и их возраста
 employees = [
     ["Валера", 30],
@@ -10,7 +8,9 @@ employees = [
     ["Александр", 34]
 ]
 
-a = numpy.array([employees])
+def custom_key(people):
+    return people[1]  # Сортировка по возврату
 
+employees.sort(key=custom_key)
 print(employees)
 
